@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ddojai apps</title>
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:#f5f5f7;color:#1d1d1f}
+    header{background:#fff;border-bottom:1px solid #e5e5e5;padding:20px 24px}
+    header h1{font-size:22px;font-weight:700}
+    header p{font-size:14px;color:#6e6e73;margin-top:4px}
+    .container{max-width:720px;margin:40px auto;padding:0 24px}
+    h2{font-size:13px;font-weight:600;color:#6e6e73;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:12px}
+    .apps{display:grid;gap:10px;margin-bottom:36px}
+    a.card{background:#fff;border-radius:14px;padding:16px 20px;display:flex;align-items:center;gap:14px;text-decoration:none;color:inherit;border:1px solid #e5e5e5;transition:box-shadow .2s}
+    a.card:hover{box-shadow:0 4px 16px rgba(0,0,0,.08)}
+    .icon{width:48px;height:48px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:24px;flex-shrink:0;background:#f0f0f0}
+    .info h3{font-size:15px;font-weight:600}
+    .info p{font-size:12px;color:#6e6e73;margin-top:2px}
+    .badge{display:inline-block;font-size:10px;background:#e3f0ff;color:#0071e3;border-radius:4px;padding:1px 5px;margin-top:4px}
+    .badge.review{background:#fff3e0;color:#e65100}
+    footer{text-align:center;padding:32px 24px;color:#6e6e73;font-size:13px}
+    footer a{color:#0071e3;text-decoration:none}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>ddojai apps</h1>
+    <p>Flutter 기반 모바일 앱 개발자</p>
+  </header>
+  <div class="container">
+    <h2>출시된 앱</h2>
+    <div class="apps">
+      <a class="card" href="/portcheck"><div class="icon">📊</div><div class="info"><h3>포트체크 - 투자 자산 관리</h3><p>주식·코인·ETF 등 투자 자산을 한 곳에서 관리</p><span class="badge">iOS</span></div></a>
+      <a class="card" href="/pomodoro"><div class="icon">🍅</div><div class="info"><h3>뽀모도로 타이머</h3><p>25분 집중 + 5분 휴식 생산성 타이머</p><span class="badge">iOS</span></div></a>
+      <a class="card" href="/carmaintenance"><div class="icon">🚗</div><div class="info"><h3>차량 정비 기록</h3><p>차량별 정비 이력, 비용 통계 관리</p><span class="badge">iOS</span></div></a>
+      <a class="card" href="/whitenoise"><div class="icon">🌊</div><div class="info"><h3>백색소음</h3><p>자연 소리 혼합 재생, 슬립 타이머</p><span class="badge review">iOS 심사 중</span></div></a>
+    </div>
+    <h2>개발 완료</h2>
+    <div class="apps">
+      <a class="card" href="/lotto"><div class="icon">🍀</div><div class="info"><h3>로또 번호 생성기</h3><p>번호 생성, 저장, 공유</p></div></a>
+      <a class="card" href="/stockscreener"><div class="icon">📈</div><div class="info"><h3>퀀트 스크리너</h3><p>주식 재무 지표 조회, 관심 종목 관리</p></div></a>
+      <a class="card" href="/dday"><div class="icon">📅</div><div class="info"><h3>경과일 기념일 계산기</h3><p>기념일 등록, D+N 표시</p></div></a>
+      <a class="card" href="/airquality"><div class="icon">🌤</div><div class="info"><h3>미세먼지 알림</h3><p>실시간 대기질 정보 확인</p></div></a>
+      <a class="card" href="/aisaju"><div class="icon">🔮</div><div class="info"><h3>AI 사주팔자</h3><p>AI 기반 사주 분석</p></div></a>
+      <a class="card" href="/fridgerecipe"><div class="icon">🍳</div><div class="info"><h3>AI 냉장고 레시피</h3><p>재료 입력 → AI 레시피 추천</p></div></a>
+      <a class="card" href="/blockpuzzle"><div class="icon">🧩</div><div class="info"><h3>블록 퍼즐</h3><p>10×10 보드 퍼즐 게임</p></div></a>
+      <a class="card" href="/todayspoll"><div class="icon">🗳</div><div class="info"><h3>오늘의 투표</h3><p>매일 새로운 주제 투표</p></div></a>
+      <a class="card" href="/workout"><div class="icon">💪</div><div class="info"><h3>운동 기록</h3><p>세트, 무게, 횟수 기록 및 통계</p></div></a>
+    </div>
+  </div>
+  <footer>
+    <p>문의: <a href="mailto:favianred@gmail.com">favianred@gmail.com</a></p>
+    <p style="margin-top:8px">© 2026 ddojai. All rights reserved.</p>
+  </footer>
+</body>
+</html>
