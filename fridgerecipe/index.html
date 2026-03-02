@@ -3,18 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AI 냉장고 레시피 - 지원</title>
+  <title>냉장고 알리미 - 지원</title>
   <style>
     *{box-sizing:border-box;margin:0;padding:0}
     body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:#f5f5f7;color:#1d1d1f}
     header{background:#fff;border-bottom:1px solid #e5e5e5;padding:20px 24px;display:flex;align-items:center;gap:14px}
-    .icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:28px;background:#f0f0f0}
+    .icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:28px;background:#e8f4fd}
     header h1{font-size:20px;font-weight:700}
     header p{font-size:13px;color:#6e6e73;margin-top:3px}
     .container{max-width:680px;margin:36px auto;padding:0 24px}
     .section{background:#fff;border-radius:14px;padding:24px;margin-bottom:16px;border:1px solid #e5e5e5}
     .section h2{font-size:17px;font-weight:700;margin-bottom:12px}
     .section>p{font-size:14px;color:#6e6e73;line-height:1.6}
+    .feature-list{list-style:none;padding:0}
+    .feature-list li{font-size:14px;color:#6e6e73;line-height:1.6;padding:6px 0;border-bottom:1px solid #f0f0f0;display:flex;align-items:flex-start;gap:8px}
+    .feature-list li:last-child{border-bottom:none}
+    .feature-list li::before{content:"•";color:#0071e3;font-weight:700;flex-shrink:0}
     .faq-item{padding:14px 0;border-bottom:1px solid #f0f0f0}
     .faq-item:last-child{border-bottom:none;padding-bottom:0}
     .faq-item h3{font-size:15px;font-weight:600;margin-bottom:6px}
@@ -26,21 +30,31 @@
 </head>
 <body>
   <header>
-    <div class="icon">🍳</div>
-    <div><h1>AI 냉장고 레시피</h1><p>지원 페이지</p></div>
+    <div class="icon">🧊</div>
+    <div><h1>냉장고 알리미</h1><p>지원 페이지</p></div>
   </header>
   <div class="container">
     <div class="section">
       <h2>앱 소개</h2>
-      <p>냉장고 속 재료를 입력하면 AI가 맞춤 레시피를 추천해주는 앱입니다.</p>
+      <p>냉장고 속 재료를 언제 쓸지 잊어버린 적 있으신가요?<br><br>
+      냉장고 알리미는 구매날짜를 기록하고, 원하는 날짜에 알림을 보내드리는 심플한 재료 관리 앱입니다.</p>
+    </div>
+    <div class="section">
+      <h2>주요 기능</h2>
+      <ul class="feature-list">
+        <li>재료 이름과 구매날짜 간편 등록</li>
+        <li>구매 후 N일째 되는 날 원하는 시간에 알림</li>
+        <li>색상 코딩으로 알림 상태 한눈에 확인 (파랑: 정상 / 주황: 임박 / 빨강: 알림 지남)</li>
+        <li>드래그로 재료 순서 자유롭게 정렬</li>
+        <li>알림 시간 원하는 대로 설정</li>
+      </ul>
     </div>
     <div class="section">
       <h2>자주 묻는 질문</h2>
-      <div class="faq-item"><h3>Q. 어떻게 사용하나요?</h3><p>보유한 재료를 입력하면 AI가 해당 재료로 만들 수 있는 레시피를 추천합니다.</p></div>
-<div class="faq-item"><h3>Q. 레시피를 공유할 수 있나요?</h3><p>네, 추천받은 레시피를 텍스트로 공유할 수 있습니다.</p></div>
-<div class="faq-item"><h3>Q. 데이터는 어디에 저장되나요?</h3><p>입력한 재료 정보는 기기에서만 처리되며 별도 저장되지 않습니다.</p></div>
-<div class="faq-item"><h3>Q. 광고가 표시되는 이유는?</h3><p>앱의 지속적인 개발과 유지보수를 위해 Google AdMob 광고가 표시됩니다.</p></div>
-
+      <div class="faq-item"><h3>Q. 어떻게 사용하나요?</h3><p>하단의 + 버튼을 눌러 재료 이름과 구매날짜를 입력하세요. 알림을 켜면 며칠 후에 알림을 받을지 슬라이더로 설정할 수 있습니다.</p></div>
+      <div class="faq-item"><h3>Q. 알림이 오지 않아요.</h3><p>기기 설정에서 냉장고 알리미 앱의 알림 권한이 허용되어 있는지 확인해 주세요.</p></div>
+      <div class="faq-item"><h3>Q. 데이터는 어디에 저장되나요?</h3><p>모든 재료 정보는 기기 내에만 저장되며, 외부 서버로 전송되지 않습니다.</p></div>
+      <div class="faq-item"><h3>Q. 광고가 표시되는 이유는?</h3><p>앱의 지속적인 개발과 유지보수를 위해 Google AdMob 광고가 표시됩니다.</p></div>
     </div>
     <div class="section">
       <h2>문의 및 지원</h2>
