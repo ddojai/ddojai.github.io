@@ -23,7 +23,8 @@ code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.87em;
 <blockquote>
 <p>이 방침의 앱별 정보는 레거시 코드 검토와 2026-09-27 App Store 조회를 기준으로 합니다. 실제 배포 바이너리가 같은지, 앱이 실제로 어떤 정보를 전송하는지는 검증하지 못했습니다. 확인되지 않은 사항은 본문에 한계로 명시합니다.</p>
 </blockquote>
-<p><strong>게시일: 2026-09-30 · 시행일: 2026-10-07 · 최종 개정일: 2026-09-30</strong></p>
+<p><strong>게시일: 2026-09-30 · 시행일: 2026-10-07 · 최종 개정일: 2026-10-12</strong></p>
+<p>2026-10-12 개정(시행 2026-10-19): Ad Pulse Revenue의 조회 대상·보관·연결해제 설명을 바로잡고 1.0.3 개편 버전의 약속을 「4. 출시 후 적용」에 더했습니다.</p>
 <p>이 방침은 아래 「1. 적용 범위」의 앱에서 어떤 정보가 어디로 가는지를 알려 드립니다. 운영자: HeungYeol Kim (개인 개발자). 이하 &quot;개발자&quot;는 이 운영자를 뜻합니다.</p>
 <h2 id="ko-heading-2">요약</h2>
 <ul>
@@ -101,7 +102,7 @@ code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.87em;
 <tr>
 <td>Google 계정 정보</td>
 <td>로그인 앱 1개(Ad Pulse Revenue)</td>
-<td>Google API. 개발자 본인의 광고 수익 조회용 앱</td>
+<td>Google API. 로그인·동의한 이용자 본인의 AdMob 추정 수익을 읽기 전용으로 조회. 개발자 서버로 전송·저장하지 않음</td>
 <td>로그인</td>
 </tr>
 <tr>
@@ -197,6 +198,7 @@ code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.87em;
 <li>광고 SDK·ATT·분석 SDK가 없습니다. 글꼴은 앱에 들어 있습니다.</li>
 <li>이용자가 직접 누른 외부 링크와 공유 기능 외에는 네트워크 요청을 보내지 않습니다. 이용자가 공유 시트·백업 내보내기로 만든 파일(예: D-Day 백업 JSON, 차량 정비 CSV)과 이용자가 고른 수신 앱·클라우드의 사본은 앱을 삭제해도 지워지지 않으며, 그 삭제는 해당 앱·서비스에서 해야 합니다. 이 내보내기는 개발자 서버로의 자동 전송이 아닙니다. <strong>단, 다음 앱은 예외로 이 문장을 쓰지 않습니다:</strong> 연휴 알리미(공휴일 조회를 위해 연도·키·IP가 한국천문연구원 서비스로 감), 환율 금값 알리미(환율·금 시세 조회를 위해 통화 코드·IP가 시세 제공처로 감). 예외의 내용은 출시 시점의 앱 설명에 맞춰 이 방침에 별도로 적습니다.</li>
 <li>대상(계획·로컬 구현 문서 기준, 스토어 출시 여부는 확인하지 않음): Roth IRA Calculator, 가계부, 차량 정비 기록, IRS Tax Refund Estimator, D-Day 기념일, 백색소음, 뽀모도로, 운전면허 필기퀴즈, 애착유형 테스트, 연휴 알리미, 환율 금값 알리미.</li>
+<li><strong>Ad Pulse Revenue(1.0.3부터):</strong> 위 첫 세 항목 대신 다음이 적용됩니다. 이용자가 Google 계정으로 로그인하고 동의한 경우에만 그 이용자의 AdMob 계정·앱 이름·추정 광고 수익을 읽기 전용(OAuth 범위 admob.readonly)으로 조회합니다. 개발자 본인 전용 앱이 아닙니다. 로그인과 조회 요청은 Google로 가며 Google 서비스에는 Google의 약관과 개인정보처리방침이 적용됩니다. 앱은 AdMob 계정 식별자·수익 보고서·OAuth 토큰을 개발자 서버로 보내거나 저장하지 않습니다. 수익 보고서와 계정 식별자는 앱 메모리에만 두고, 월 목표·수동 환율·표시·알림 선택은 기기에 저장합니다. 로그인 세션과 토큰은 Google Sign-In SDK가 관리하며 앱이 따로 복제하지 않습니다. 로그아웃하면 계정 캐시·메모리 보고서·계정 수익 알림을 지웁니다. 로그아웃만으로 Google 접근 권한이 철회되지는 않으며, 설정의 「Google 연결해제」로 철회를 요청하거나 Google 계정의 서드 파티 연결 화면에서 확인·철회할 수 있습니다. 매일 오전 9시 알림은 기기 시간 기준의 확인 리마인더이며 앱이 백그라운드에서 수익을 조회해 보내는 보고서가 아닙니다. 공유는 이용자가 누를 때만 운영체제 공유 화면을 열고, 공유한 내용의 처리는 이용자가 고른 앱·서비스의 정책을 따릅니다. 광고 SDK·ATT가 없고 글꼴은 앱에 들어 있습니다. 수익은 USD·America/Los_Angeles 날짜 기준의 추정치이며 확정 지급액과 다를 수 있습니다.</li>
 </ul>
 <h2 id="ko-heading-7">5. 위치·카메라·사진·파일·공유</h2>
 <ul>
@@ -541,10 +543,10 @@ code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.87em;
 <tr>
 <td>3</td>
 <td>Ad Pulse Revenue</td>
-<td>SDK 있음·ATT 호출 뒤 초기화</td>
+<td>SDK 있음·ATT 호출 뒤 초기화(1.0.2까지). 1.0.3부터 광고 SDK·ATT 없음</td>
 <td>아니오</td>
 <td>admob.googleapis.com www.googleapis.com</td>
-<td>[자동] Google 로그인(OAuth 범위 admob.readonly) 뒤 admob.googleapis.com·www.googleapis.com에 AdMob 수익 API 요청. 개발자 본인의 수익 조회용 앱</td>
+<td>[자동] Google 로그인(OAuth 범위 admob.readonly) 뒤 admob.googleapis.com·www.googleapis.com에 AdMob 수익 API 요청. 로그인·동의한 이용자 본인의 수익 조회(보고서는 앱 메모리에만 보관)</td>
 <td>예</td>
 <td>SharedPreferences</td>
 <td>Google 로그인(OAuth)</td>
@@ -1322,7 +1324,7 @@ code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.87em;
 <tr>
 <td>Ad Pulse Revenue</td>
 <td>자동</td>
-<td>Google 로그인(OAuth 범위 admob.readonly) 뒤 admob.googleapis.com·www.googleapis.com에 AdMob 수익 API 요청. 개발자 본인의 수익 조회용 앱</td>
+<td>Google 로그인(OAuth 범위 admob.readonly) 뒤 admob.googleapis.com·www.googleapis.com에 AdMob 수익 API 요청. 로그인·동의한 이용자 본인의 수익 조회(보고서는 앱 메모리에만 보관)</td>
 <td>Google(미국)</td>
 </tr>
 <tr>
@@ -1894,7 +1896,8 @@ code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.87em;
 <blockquote>
 <p>App-specific information is based on legacy code review and the App Store lookup of 2026-09-27. We have not verified that the shipped binaries match, or what the apps actually transmit. Unverified facts remain stated as limitations in this policy.</p>
 </blockquote>
-<p><strong>Published: 2026-09-30 · Effective: 2026-10-07 · Last revised: 2026-09-30</strong></p>
+<p><strong>Published: 2026-09-30 · Effective: 2026-10-07 · Last revised: 2026-10-12</strong></p>
+<p>Revision of 2026-10-12 (effective 2026-10-19): corrects how Ad Pulse Revenue is described (whose account it reads, what it keeps, how to disconnect) and adds the commitments for its rebuilt 1.0.3 version to “4. Applies after release”.</p>
 <p>This policy explains what information goes where when you use the apps listed in section 1. Operator: HeungYeol Kim (individual developer). &quot;The developer&quot; below means this operator.</p>
 <h2 id="en-heading-2">Summary</h2>
 <ul>
@@ -1972,7 +1975,7 @@ code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.87em;
 <tr>
 <td>Google account</td>
 <td>You sign in (1 app: Ad Pulse Revenue)</td>
-<td>Google APIs. That app is the developer's own tool for reading their ad revenue</td>
+<td>Google APIs. Read-only view of the signed-in, consenting user's own estimated AdMob revenue; nothing is sent to or stored on a developer server</td>
 <td>Sign-in</td>
 </tr>
 <tr>
@@ -2068,6 +2071,7 @@ code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.87em;
 <li>There is no ad SDK, ATT prompt or analytics SDK. Fonts are bundled in the app.</li>
 <li>The app makes no network requests other than links you tap and the share sheet. Files you create with the share sheet or a backup export (for example the D-Day backup JSON, the Car Maintenance CSV) and copies held by the receiving app or cloud you chose are not removed when you delete the app; delete them in that app or service. This export is not an automatic transfer to a developer server. <strong>Two apps are exceptions and do not get this sentence:</strong> Holiday Reminder (year, key and IP go to the Korea Astronomy and Space Science Institute's public-holiday service) and Gold &amp; FX Alert (currency codes and IP go to the price sources). Their exact wording will be added to this policy when they ship.</li>
 <li>Apps planned (per planning and local-implementation documents; store release was not checked): Roth IRA Calculator, Budget Planner, Car Maintenance Log, IRS Tax Refund Estimator, D-Day, White Noise, Pomodoro, Driving Test Quiz, Attachment Style Test, Holiday Reminder, Gold &amp; FX Alert.</li>
+<li><strong>Ad Pulse Revenue (from 1.0.3):</strong> the following applies instead of the first three items above. Only after you sign in with Google and consent, the app reads your own AdMob account, app names and estimated ad revenue read-only (OAuth scope admob.readonly). It is not a developer-only tool. Sign-in and queries go to Google, and Google's terms and privacy policy apply to its services. The app does not send AdMob account identifiers, revenue reports or OAuth tokens to a developer server, and does not store them there. Revenue reports and the account identifier are held in app memory only; goals, manual exchange rates and display and notification choices are stored on the device. Google Sign-In manages its own session and tokens; the app does not copy them. Signing out removes the account cache, in-memory reports and account revenue alerts. Signing out does not by itself revoke Google access: use Disconnect Google in Settings to request revocation, or review and remove access in your Google Account's third-party connections. The optional 9am notification is a device-time reminder, not a revenue report fetched in the background. Sharing opens the system share sheet only when you tap it, and the app or service you choose handles what you share under its own policy. There is no ad SDK or ATT prompt, and fonts are bundled. Revenue figures use USD and America/Los_Angeles dates and are estimates, not final payouts.</li>
 </ul>
 <h2 id="en-heading-7">5. Location, camera, photos, files, sharing</h2>
 <ul>
@@ -2412,10 +2416,10 @@ code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.87em;
 <tr>
 <td>3</td>
 <td>Ad Pulse Revenue</td>
-<td>SDK present; initialized after the ATT call</td>
+<td>SDK present; initialized after the ATT call (up to 1.0.2). No ad SDK or ATT from 1.0.3</td>
 <td>No</td>
 <td>admob.googleapis.com www.googleapis.com</td>
-<td>[Automatic] After Google Sign-In (OAuth scope admob.readonly), requests to the AdMob revenue API at admob.googleapis.com and www.googleapis.com. The developer's own revenue-checking tool</td>
+<td>[Automatic] After Google Sign-In (OAuth scope admob.readonly), requests to the AdMob revenue API at admob.googleapis.com and www.googleapis.com. Reads the signed-in, consenting user's own revenue (reports are held in app memory only)</td>
 <td>Yes</td>
 <td>SharedPreferences</td>
 <td>Google Sign-In (OAuth)</td>
@@ -3193,7 +3197,7 @@ code{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:.87em;
 <tr>
 <td>Ad Pulse Revenue</td>
 <td>Automatic</td>
-<td>After Google Sign-In (OAuth scope admob.readonly), requests to the AdMob revenue API at admob.googleapis.com and www.googleapis.com. The developer's own revenue-checking tool</td>
+<td>After Google Sign-In (OAuth scope admob.readonly), requests to the AdMob revenue API at admob.googleapis.com and www.googleapis.com. Reads the signed-in, consenting user's own revenue (reports are held in app memory only)</td>
 <td>Google (USA)</td>
 </tr>
 <tr>
