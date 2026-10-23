@@ -7,10 +7,10 @@
   <style>
     *{box-sizing:border-box;margin:0;padding:0}
     body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:#f5f5f7;color:#1d1d1f}
-    header{background:#6C63FF;padding:20px 24px;display:flex;align-items:center;gap:14px}
-    .icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:28px;background:rgba(255,255,255,0.2)}
-    header h1{font-size:20px;font-weight:700;color:#fff}
-    header p{font-size:13px;color:rgba(255,255,255,0.8);margin-top:3px}
+    header{background:#fff;border-bottom:1px solid #e5e5e5;padding:20px 24px;display:flex;align-items:center;gap:14px}
+    .icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:28px;background:#f0f0f0}
+    header h1{font-size:20px;font-weight:700}
+    header p{font-size:13px;color:#6e6e73;margin-top:3px}
     .container{max-width:680px;margin:36px auto;padding:0 24px}
     .section{background:#fff;border-radius:14px;padding:24px;margin-bottom:16px;border:1px solid #e5e5e5}
     .section h2{font-size:17px;font-weight:700;margin-bottom:12px}
@@ -19,31 +19,29 @@
     .faq-item:last-child{border-bottom:none;padding-bottom:0}
     .faq-item h3{font-size:15px;font-weight:600;margin-bottom:6px}
     .faq-item p{font-size:14px;color:#6e6e73;line-height:1.6}
-    .contact-btn{display:block;text-align:center;background:#6C63FF;color:#fff;border-radius:12px;padding:14px;text-decoration:none;font-size:15px;font-weight:600;margin-top:14px}
+    .contact-btn{display:block;text-align:center;background:#0071e3;color:#fff;border-radius:12px;padding:14px;text-decoration:none;font-size:15px;font-weight:600;margin-top:14px}
     footer{text-align:center;padding:24px;color:#6e6e73;font-size:12px}
-    footer a{color:#6C63FF;text-decoration:none}
+    footer a{color:#0071e3;text-decoration:none}
   </style>
 </head>
 <body>
   <header>
-    <div class="icon">🥚</div>
+    <div class="icon" aria-hidden="true">📱</div>
     <div><h1>습관 키우기</h1><p>지원 페이지</p></div>
   </header>
   <div class="container">
-    <div class="section">
-      <h2>앱 소개</h2>
-      <p>매일 습관을 실천할수록 나만의 캐릭터가 성장하는 게임형 습관 트래커입니다. 알에서 시작해 독수리까지 — 꾸준한 실천이 캐릭터를 진화시킵니다.</p>
+    <div class="section"><h2>앱 소개</h2><p>오늘 남은 습관을 체크하며 캐릭터를 키우는 기록 앱입니다. 체크한 경험치와 다음 성장 단계까지 남은 양을 확인할 수 있습니다.</p></div>
+    <div class="section"><h2>적용 버전</h2><p>이 안내는 1.2.0 버전의 스토어 출시 후 해당 버전에 적용됩니다. 설치한 버전에 따라 기능이 다르며 이전 버전의 개인정보 설명은 공통 방침에서 확인해 주세요.</p></div>
+    <div class="section"><h2>주요 기능</h2><p>오늘 남은 습관과 1탭 체크·취소<br>
+알에서 독수리까지 5단계<br>
+습관 편집·알림·주간·월간 통계</p></div>
+    <div class="section"><h2>자주 묻는 질문</h2>
+      <div class="faq-item"><h3>캐릭터는 몇 단계로 자라나요?</h3><p>알, 알에서 깨어남, 병아리, 닭, 독수리의 다섯 단계입니다.</p></div>
+      <div class="faq-item"><h3>완료한 습관은 어디로 갔나요?</h3><p>오늘 끝낸 습관은 아래로 접혀 남은 습관이 먼저 보입니다. 완료 구역을 펼쳐 확인할 수 있습니다.</p></div>
+      <div class="faq-item"><h3>습관 순서나 알림을 바꿀 수 있나요?</h3><p>습관을 편집하고 순서를 바꿀 수 있으며 습관별 알림 시각을 설정할 수 있습니다.</p></div>
     </div>
-    <div class="section">
-      <h2>자주 묻는 질문</h2>
-      <div class="faq-item"><h3>Q. 경험치는 어떻게 쌓이나요?</h3><p>습관 체크 시 기본 10XP를 획득하며, 연속 달성(스트릭)에 따라 보너스 XP를 추가로 받습니다. (3일+5, 7일+10, 30일+20)</p></div>
-      <div class="faq-item"><h3>Q. 캐릭터는 몇 단계까지 성장하나요?</h3><p>알 → 알에서 깨어남 → 병아리 → 닭 → 독수리 순으로 5단계 진화합니다.</p></div>
-      <div class="faq-item"><h3>Q. 알림 설정이 가능한가요?</h3><p>습관마다 원하는 시간에 알림을 설정할 수 있습니다.</p></div>
-      <div class="faq-item"><h3>Q. 데이터는 어디에 저장되나요?</h3><p>모든 습관 데이터는 기기 내부에만 저장됩니다. 클라우드 동기화는 지원하지 않습니다.</p></div>
-      <div class="faq-item"><h3>Q. 광고가 표시되는 이유는?</h3><p>앱의 지속적인 개발과 유지보수를 위해 Google AdMob 광고가 표시됩니다.</p></div>
-    </div>
-    <div class="section">
-      <h2>문의 및 지원</h2>
+    <div class="section"><h2>개인정보 요약</h2><p>저장한 기록과 설정은 이 기기의 앱 저장소에 보관되며 개발자 서버로 자동 업로드하지 않습니다.이 버전에는 광고와 추적이 없습니다. 외부 링크를 직접 열면 연결한 서비스의 처리가 적용됩니다.공유는 직접 선택한 내용만 고른 앱으로 보냅니다.OS 설정에 따라 기기 백업에 앱 데이터가 포함될 수 있으며 앱 삭제로 백업이나 받은 쪽 사본까지 지워지지는 않습니다.</p></div>
+    <div class="section" lang="ko"><h2>문의 및 지원 / Contact</h2>
       <p>문의 사항이 있으시면 아래 이메일로 연락해 주세요.</p>
       <a class="contact-btn" href="mailto:favianred@gmail.com">favianred@gmail.com</a>
     </div>

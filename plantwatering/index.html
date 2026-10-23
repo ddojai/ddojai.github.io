@@ -8,7 +8,7 @@
     *{box-sizing:border-box;margin:0;padding:0}
     body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:#f5f5f7;color:#1d1d1f}
     header{background:#fff;border-bottom:1px solid #e5e5e5;padding:20px 24px;display:flex;align-items:center;gap:14px}
-    .icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:28px;background:#e8f5e9}
+    .icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:28px;background:#f0f0f0}
     header h1{font-size:20px;font-weight:700}
     header p{font-size:13px;color:#6e6e73;margin-top:3px}
     .container{max-width:680px;margin:36px auto;padding:0 24px}
@@ -26,24 +26,22 @@
 </head>
 <body>
   <header>
-    <div class="icon">🌱</div>
+    <div class="icon" aria-hidden="true">📱</div>
     <div><h1>화분 물주기</h1><p>지원 페이지</p></div>
   </header>
   <div class="container">
-    <div class="section">
-      <h2>앱 소개</h2>
-      <p>화분별 물주기 D-Day를 관리하고 비료·분갈이 알림을 받을 수 있는 식물 관리 앱입니다. 공간(방)별로 식물을 분류하고 물주기 기록을 한눈에 확인하세요.</p>
+    <div class="section"><h2>앱 소개</h2><p>흙을 확인하고 실제 물준 날과 다시 확인할 날을 따로 남깁니다. 화분별 돌봄 기록과 사진, 비료·분갈이 일정을 관리할 수 있습니다.</p></div>
+    <div class="section"><h2>적용 버전</h2><p>이 안내는 1.3.2 버전의 스토어 출시 후 해당 버전에 적용됩니다. 설치한 버전에 따라 기능이 다르며 이전 버전의 개인정보 설명은 공통 방침에서 확인해 주세요.</p></div>
+    <div class="section"><h2>주요 기능</h2><p>물 줬어요·아직 촉촉해요 기록<br>
+물주기 이력·사진·돌봄 일정<br>
+위젯 조회와 iOS 17 이상 중간 위젯 기록</p></div>
+    <div class="section"><h2>자주 묻는 질문</h2>
+      <div class="faq-item"><h3>알림이 오면 반드시 물을 줘야 하나요?</h3><p>흙을 확인하라는 일정이며 흙의 상태를 자동 판단하지 않습니다.</p></div>
+      <div class="faq-item"><h3>아직 촉촉해요를 누르면 무엇이 바뀌나요?</h3><p>물준 기록은 유지하고 다시 확인할 날짜만 미룹니다. 위젯에서는 내일로 미룹니다.</p></div>
+      <div class="faq-item"><h3>위젯에서 눌렀는데 앱 기록이 바로 바뀌지 않아요.</h3><p>위젯 기록은 앱을 열 때 반영됩니다. 앱에서 반영된 기록을 확인하고 되돌릴 수 있습니다.</p></div>
     </div>
-    <div class="section">
-      <h2>자주 묻는 질문</h2>
-      <div class="faq-item"><h3>Q. 식물을 몇 개까지 등록할 수 있나요?</h3><p>등록 가능한 식물 수에 제한이 없습니다. 원하는 만큼 자유롭게 추가하세요.</p></div>
-      <div class="faq-item"><h3>Q. 물주기 알림은 어떻게 설정하나요?</h3><p>식물 등록 또는 편집 화면에서 물주기 주기(며칠마다)를 설정하면 해당 날짜에 자동으로 알림이 전송됩니다.</p></div>
-      <div class="faq-item"><h3>Q. 비료와 분갈이 알림도 받을 수 있나요?</h3><p>네, 식물별로 비료 주기와 분갈이 주기를 따로 설정할 수 있으며 각각 알림을 받을 수 있습니다.</p></div>
-      <div class="faq-item"><h3>Q. 공간(방) 필터는 어떻게 사용하나요?</h3><p>식물 등록 시 방 이름(거실, 침실 등)을 입력하면 홈 화면에서 공간별로 필터링하여 볼 수 있습니다.</p></div>
-      <div class="faq-item"><h3>Q. 광고가 표시되는 이유는?</h3><p>앱의 지속적인 개발과 유지보수를 위해 Google AdMob 광고가 표시됩니다.</p></div>
-    </div>
-    <div class="section">
-      <h2>문의 및 지원</h2>
+    <div class="section"><h2>개인정보 요약</h2><p>저장한 기록과 설정은 이 기기의 앱 저장소에 보관되며 개발자 서버로 자동 업로드하지 않습니다.이 버전에는 광고와 추적이 없습니다. 외부 링크를 직접 열면 연결한 서비스의 처리가 적용됩니다.공유는 직접 선택한 내용만 고른 앱으로 보냅니다.OS 설정에 따라 기기 백업에 앱 데이터가 포함될 수 있으며 앱 삭제로 백업이나 받은 쪽 사본까지 지워지지는 않습니다.</p></div>
+    <div class="section" lang="ko"><h2>문의 및 지원 / Contact</h2>
       <p>문의 사항이 있으시면 아래 이메일로 연락해 주세요.</p>
       <a class="contact-btn" href="mailto:favianred@gmail.com">favianred@gmail.com</a>
     </div>

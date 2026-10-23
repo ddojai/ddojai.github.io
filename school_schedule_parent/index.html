@@ -8,7 +8,7 @@
     *{box-sizing:border-box;margin:0;padding:0}
     body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:#f5f5f7;color:#1d1d1f}
     header{background:#fff;border-bottom:1px solid #e5e5e5;padding:20px 24px;display:flex;align-items:center;gap:14px}
-    .icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:28px;background:#e8f5e9}
+    .icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:28px;background:#f0f0f0}
     header h1{font-size:20px;font-weight:700}
     header p{font-size:13px;color:#6e6e73;margin-top:3px}
     .container{max-width:680px;margin:36px auto;padding:0 24px}
@@ -26,23 +26,22 @@
 </head>
 <body>
   <header>
-    <div class="icon">📅</div>
+    <div class="icon" aria-hidden="true">📱</div>
     <div><h1>학부모 학사 달력</h1><p>지원 페이지</p></div>
   </header>
   <div class="container">
-    <div class="section">
-      <h2>앱 소개</h2>
-      <p>자녀의 시험, 방학, 학교 행사를 한 곳에서 관리하세요. 시험 D-Day 알림, 준비물 체크리스트, 다자녀 관리까지 — 학부모를 위한 맞춤형 학사 달력입니다.</p>
+    <div class="section"><h2>앱 소개</h2><p>자녀별 학사 일정과 준비물을 기기에 기록합니다. 가까운 일정과 남은 날을 살펴보고 날짜에 맞는 알림을 설정할 수 있습니다.</p></div>
+    <div class="section"><h2>적용 버전</h2><p>이 안내는 1.1.0 버전의 스토어 출시 후 해당 버전에 적용됩니다. 설치한 버전에 따라 기능이 다르며 이전 버전의 개인정보 설명은 공통 방침에서 확인해 주세요.</p></div>
+    <div class="section"><h2>주요 기능</h2><p>자녀별 일정·달력<br>
+준비물 체크리스트<br>
+가까운 일정·D-Day와 선택 알림</p></div>
+    <div class="section"><h2>자주 묻는 질문</h2>
+      <div class="faq-item"><h3>학교에서 일정을 자동으로 가져오나요?</h3><p>일정 제목과 날짜를 직접 입력합니다. 학교 서버와 자동 연동하는 기능은 아닙니다.</p></div>
+      <div class="faq-item"><h3>방학처럼 여러 날의 기간도 저장하나요?</h3><p>일정 하나에 날짜 하나를 기록합니다. 시작·종료일을 함께 저장하는 기간 일정은 아닙니다.</p></div>
+      <div class="faq-item"><h3>알림 시각은 무엇인가요?</h3><p>일정 3일 전·1일 전·당일 한국시간 오전 8시에 예약합니다. 권한과 운영체제 설정에 따라 전달이 지연될 수 있습니다.</p></div>
     </div>
-    <div class="section">
-      <h2>자주 묻는 질문</h2>
-      <div class="faq-item"><h3>Q. 자녀를 몇 명까지 등록할 수 있나요?</h3><p>최대 3명까지 각각 색상을 구분해 관리할 수 있습니다.</p></div>
-      <div class="faq-item"><h3>Q. 시험 알림은 언제 오나요?</h3><p>시험 3일 전, 1일 전, 당일 오전 8시에 자동 알림이 발송됩니다.</p></div>
-      <div class="faq-item"><h3>Q. 준비물 체크리스트는 어떻게 사용하나요?</h3><p>시험 일정 추가 시 준비물을 함께 등록하고, 하나씩 체크하며 빠짐없이 준비할 수 있습니다.</p></div>
-      <div class="faq-item"><h3>Q. 광고가 표시되는 이유는?</h3><p>앱의 지속적인 개발과 유지보수를 위해 Google AdMob 광고가 표시됩니다.</p></div>
-    </div>
-    <div class="section">
-      <h2>문의 및 지원</h2>
+    <div class="section"><h2>개인정보 요약</h2><p>저장한 기록과 설정은 이 기기의 앱 저장소에 보관되며 개발자 서버로 자동 업로드하지 않습니다.이 버전에는 광고와 추적이 없습니다. 외부 링크를 직접 열면 연결한 서비스의 처리가 적용됩니다.공유는 직접 선택한 내용만 고른 앱으로 보냅니다.OS 설정에 따라 기기 백업에 앱 데이터가 포함될 수 있으며 앱 삭제로 백업이나 받은 쪽 사본까지 지워지지는 않습니다.</p></div>
+    <div class="section" lang="ko"><h2>문의 및 지원 / Contact</h2>
       <p>문의 사항이 있으시면 아래 이메일로 연락해 주세요.</p>
       <a class="contact-btn" href="mailto:favianred@gmail.com">favianred@gmail.com</a>
     </div>

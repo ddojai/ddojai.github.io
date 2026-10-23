@@ -3,76 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>가계부 - 지출 관리 | 지원</title>
+  <title>가계부 - 지출 관리 - 지원</title>
   <style>
     *{box-sizing:border-box;margin:0;padding:0}
     body{font-family:-apple-system,BlinkMacSystemFont,sans-serif;background:#f5f5f7;color:#1d1d1f}
-    header{background:#1B5E20;padding:20px 24px;display:flex;align-items:center;gap:14px}
-    .icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:28px;background:rgba(255,255,255,0.2)}
-    header h1{font-size:20px;font-weight:700;color:#fff}
-    header p{font-size:13px;color:rgba(255,255,255,0.8);margin-top:3px}
+    header{background:#fff;border-bottom:1px solid #e5e5e5;padding:20px 24px;display:flex;align-items:center;gap:14px}
+    .icon{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;font-size:28px;background:#f0f0f0}
+    header h1{font-size:20px;font-weight:700}
+    header p{font-size:13px;color:#6e6e73;margin-top:3px}
     .container{max-width:680px;margin:36px auto;padding:0 24px}
     .section{background:#fff;border-radius:14px;padding:24px;margin-bottom:16px;border:1px solid #e5e5e5}
     .section h2{font-size:17px;font-weight:700;margin-bottom:12px}
     .section>p{font-size:14px;color:#6e6e73;line-height:1.6}
-    ul{margin-top:8px;padding-left:18px}
-    ul li{font-size:14px;color:#6e6e73;line-height:1.8}
     .faq-item{padding:14px 0;border-bottom:1px solid #f0f0f0}
     .faq-item:last-child{border-bottom:none;padding-bottom:0}
     .faq-item h3{font-size:15px;font-weight:600;margin-bottom:6px}
     .faq-item p{font-size:14px;color:#6e6e73;line-height:1.6}
-    .contact-btn{display:block;text-align:center;background:#1B5E20;color:#fff;border-radius:12px;padding:14px;text-decoration:none;font-size:15px;font-weight:600;margin-top:14px}
+    .contact-btn{display:block;text-align:center;background:#0071e3;color:#fff;border-radius:12px;padding:14px;text-decoration:none;font-size:15px;font-weight:600;margin-top:14px}
     footer{text-align:center;padding:24px;color:#6e6e73;font-size:12px}
-    footer a{color:#1B5E20;text-decoration:none}
+    footer a{color:#0071e3;text-decoration:none}
   </style>
 </head>
 <body>
   <header>
-    <div class="icon">💰</div>
+    <div class="icon" aria-hidden="true">📱</div>
     <div><h1>가계부 - 지출 관리</h1><p>지원 페이지</p></div>
   </header>
   <div class="container">
-    <div class="section">
-      <h2>앱 소개</h2>
-      <p>매일 쓰는 돈, 한눈에 파악하세요!<br><br>식비, 교통, 쇼핑, 의료, 여가 등 카테고리별로 지출을 기록하고 월 예산을 설정해 얼마나 썼는지 게이지로 확인하세요.</p>
+    <div class="section"><h2>앱 소개</h2><p>말하거나 한 줄로 적은 지출에서 금액·분류·결제수단을 나누어 기록합니다. 월 예산과 정기 지출을 바탕으로 오늘 쓸 수 있는 참고액을 보여 줍니다.</p></div>
+    <div class="section"><h2>적용 버전</h2><p>이 안내는 1.5.0 버전의 스토어 출시 후 해당 버전에 적용됩니다. 설치한 버전에 따라 기능이 다르며 이전 버전의 개인정보 설명은 공통 방침에서 확인해 주세요.</p></div>
+    <div class="section"><h2>주요 기능</h2><p>한국어 음성·한 줄 기록과 수정·되돌리기<br>
+예산·정기 지출·카테고리 통계<br>
+위젯·단축어 진입과 CSV 내보내기</p></div>
+    <div class="section"><h2>자주 묻는 질문</h2>
+      <div class="faq-item"><h3>음성이 인식되지 않으면 어떻게 하나요?</h3><p>기기 안 음성 인식을 지원하지 않으면 음성 입력을 사용하지 않습니다. 한 줄 입력으로 기록할 수 있습니다.</p></div>
+      <div class="faq-item"><h3>말한 문장은 어디로 가나요?</h3><p>앱은 기기 안 인식만 요청하며 말한 문장을 저장하지 않습니다. 녹음·음성 인식은 사용자가 허용해야 사용할 수 있습니다.</p></div>
+      <div class="faq-item"><h3>정기 지출은 언제 기록되나요?</h3><p>앱을 열 때 발생일에 맞춰 기록하며 놓친 날짜도 채웁니다. 결제나 은행 이체를 실행하는 기능은 아닙니다.</p></div>
     </div>
-    <div class="section">
-      <h2>주요 기능</h2>
-      <ul>
-        <li>6가지 카테고리로 지출 분류 (식비, 교통, 쇼핑, 의료, 여가, 기타)</li>
-        <li>월 예산 설정 + 초과 시 경고 표시</li>
-        <li>카테고리별 지출 비율 한눈에 파악</li>
-        <li>월별 지출 내역 조회 + 스와이프로 삭제</li>
-        <li>깔끔한 예산 게이지로 잔여 예산 확인</li>
-      </ul>
-    </div>
-    <div class="section">
-      <h2>자주 묻는 질문</h2>
-      <div class="faq-item">
-        <h3>데이터는 어디에 저장되나요?</h3>
-        <p>모든 데이터는 기기 내부에만 저장되며 외부 서버로 전송되지 않습니다.</p>
-      </div>
-      <div class="faq-item">
-        <h3>앱을 삭제하면 데이터가 사라지나요?</h3>
-        <p>네, 앱을 삭제하면 저장된 지출 내역도 함께 삭제됩니다. 중요한 내역은 미리 메모해두세요.</p>
-      </div>
-      <div class="faq-item">
-        <h3>광고가 있나요?</h3>
-        <p>기본 기능은 광고 없이 무료로 이용할 수 있습니다.</p>
-      </div>
-    </div>
-    <div class="section">
-      <h2>문의하기</h2>
+    <div class="section"><h2>개인정보 요약</h2><p>저장한 기록과 설정은 이 기기의 앱 저장소에 보관되며 개발자 서버로 자동 업로드하지 않습니다. 음성 입력은 권한을 허용한 뒤 기기 안 인식만 요청하며 지원하지 않는 기기에서는 한 줄 입력을 사용합니다. 앱은 말한 문장을 저장하거나 개발자 서버로 전송하지 않습니다.이 버전에는 광고와 추적이 없습니다. 외부 링크를 직접 열면 연결한 서비스의 처리가 적용됩니다.공유는 직접 선택한 내용만 고른 앱으로 보냅니다.OS 설정에 따라 기기 백업에 앱 데이터가 포함될 수 있으며 앱 삭제로 백업이나 받은 쪽 사본까지 지워지지는 않습니다.</p></div>
+    <div class="section" lang="ko"><h2>문의 및 지원 / Contact</h2>
       <p>사용 중 문제가 있거나 개선 의견이 있으면 언제든지 연락해주세요.</p>
       <a class="contact-btn" href="mailto:favianred@gmail.com">이메일 문의</a>
     </div>
-    <div class="section">
-      <h2>개인정보처리방침</h2>
-      <p>이 앱은 개인 식별 정보를 수집하지 않습니다. <a href="https://ddojai.github.io/privacy/" style="color:#1B5E20">개인정보처리방침 전문 보기</a></p>
-    </div>
   </div>
   <footer>
-    <p>© 2026 ddojai · <a href="https://ddojai.github.io">모든 앱 보기</a> · <a href="mailto:favianred@gmail.com">favianred@gmail.com</a></p>
+    <a href="/">← 전체 앱 보기</a> · <a href="https://ddojai.github.io/privacy/">개인정보처리방침</a>
+    <p style="margin-top:8px">© 2026 ddojai</p>
   </footer>
 </body>
 </html>
